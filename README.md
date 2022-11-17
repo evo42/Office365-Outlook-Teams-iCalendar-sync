@@ -15,7 +15,7 @@ A `Bookmarklet-App` is some kind of robot executed in the context of a website i
 
 ## Development
 
- * Get the source code `git clone https://gist.github.com/evo42/a5c0d9b6a18b15e0387b48430bcdd46b ./iCalSync && cd ./iCalSync`
- * Run the setup and build scripts `npm run setup` and `npm run build`
- * Change the source code.
+ * Get the source code `git clone https://github.com/evo42/Office365-Outlook-Teams-iCalendar-sync ./iCalSync`
+ * Run the setup and build scripts `cd ./iCalSync && npm run setup && npm run build`
+ * Change the source code to your needs.
  * Run `npm run build` again.
