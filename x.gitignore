@@ -1,0 +1,6 @@
+.hintrc
+.gitignore
+package-lock.json
+xyz.dist__*
+dist
+node_modules
