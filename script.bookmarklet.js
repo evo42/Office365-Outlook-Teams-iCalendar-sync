@@ -38,7 +38,7 @@ if (input) {
           //---debug---console.log(data);
 
           // URI Encode input data
-          templateData = content.replace('alert(document.cookie);', encodedInput).replace('Get Biscuit : )', 'iCal sync')
+          templateData = content.replace('alert(document.cookie);', encodedInput).replace('Get Biscuit.', 'iCal sync')
 
           //---debug---console.log('*** templateData: ', templateData)
 
