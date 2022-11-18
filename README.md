@@ -1,4 +1,4 @@
-# Life-Work Calendar-Sync
+# Life-Work-Calendar - Sync corporate Outlook events as iCalendar
 
   > This Bookmarklet-App downloads your `Office365 Outlook™` / `Microsoft Teams™` calendar as iCalender `*.ics` document.
   You can import those events into your own calender to schedule your `Life-Work-Balance`.
