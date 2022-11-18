@@ -9,6 +9,7 @@ const fs = require('fs'),
 
 let input = args[0] || './xyz.dist__bookmarklet-src.min.js',
     template = args[1] || './page-iCal-Bookmarklet.htm',
+    bookmarkletOutput = './web/index.htm',
     encodedInput = null,
     templateData = null
 
@@ -43,7 +44,7 @@ if (input) {
           //---debug---console.log('*** templateData: ', templateData)
 
           try {
-            fs.writeFileSync('./web-iCal-sync.htm', templateData);
+            fs.writeFileSync(bookmarkletOutput, templateData);
             //---debug---
             console.log('*** templateData file written successfully.')
           } catch (err) {

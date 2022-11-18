@@ -4,7 +4,7 @@
   "description": "Office365 Outlook / Microsoft Teams Calendar <--> iCalendar *.ics Sync App",
   "main": "outlook-teams-company-events-to-icalendar-sync.js",
   "scripts": {
-    "setup": "echo '*** Setup Life-Work Calendar Sync ...' && cp x.gitignore .gitignore && cp x.hintrc .hintrc && git pull && npm install && ./node_modules/.bin/uglifyjs -o ./xyz.dist__bookmarklet-src.min.js ./outlook-teams-company-events-to-icalendar-sync.js && echo '*** done.' && exit 1",
+    "setup": "echo '*** Setup Life-Work Calendar Sync ...' && cp x.gitignore .gitignore && cp x.hintrc .hintrc && git pull && npm install && ./node_modules/.bin/uglifyjs -o ./xyz.dist__bookmarklet-src.min.js --compress --mangle -- ./outlook-teams-company-events-to-icalendar-sync.js && echo '*** done.' && exit 1",
     "build": "echo '*** Build Bookmarklet: Life-Work Calendar Sync ...' && node script.bookmarklet.js && echo '*** done.' && exit 1",
     "test": "echo \"Error: no test spnode_modulesecified\" && exit 1"
   },
