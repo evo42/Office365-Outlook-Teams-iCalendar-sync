@@ -9,7 +9,7 @@ const fs = require('fs'),
 
 let input = args[0] || './xyz.dist__bookmarklet-src.min.js',
     template = args[1] || './page-iCal-Bookmarklet.htm',
-    bookmarkletOutput = './web/index.htm',
+    bookmarkletOutput = './docs/index.htm',
     encodedInput = null,
     templateData = null
 
