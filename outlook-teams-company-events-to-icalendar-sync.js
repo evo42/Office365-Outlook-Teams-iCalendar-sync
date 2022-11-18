@@ -121,8 +121,8 @@ doDataRequest(reqCanaryId).then(data => {
         folderName = 'Kalender' // not that good ...
 
     data.forEach(folder => {
-        // if (folder['__type'] == 'CalendarFolder:#Exchange' && folder['DisplayName'] === folderName) {
-        if (folder['__type'] === 'CalendarFolder:#Exchange') {
+        if (folder['__type'] == 'CalendarFolder:#Exchange' && folder['DisplayName'] === folderName) {
+        // if (folder['__type'] === 'CalendarFolder:#Exchange') {
             folderCounter++
             if (folderCounter === 1) {
                 reqFolderId = folder.FolderId.Id
