@@ -29,6 +29,10 @@ label {
     height: auto;
 }
 
+.link-large {
+    font-size: 150%;
+}
+
 /*
  * -- LAYOUT STYLES --
  * These are some useful classes which I will need
@@ -109,6 +113,7 @@ a.pure-button-primary {
     color: white;
     font-weight: 400;
     font-size: 120%;
+    text-transform: none;
 }
 
 .home-menu .pure-menu-selected a {
@@ -171,6 +176,7 @@ a.pure-button-primary {
     color: white;
     letter-spacing: 0.05em;
     opacity: 0.8;
+    font-size: 125%;
 }
 
 /*

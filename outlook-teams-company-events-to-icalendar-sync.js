@@ -118,16 +118,20 @@ function fmtDate(date) {
 
 doDataRequest(reqCanaryId).then(data => {
     let folderCounter = 0, // should work ...
-        folderName = 'Kalender' // not that good ...
+        folderName = ['Kalender', 'Calendar'] // not that good ...
 
     data.forEach(folder => {
-        if (folder['__type'] == 'CalendarFolder:#Exchange' && folder['DisplayName'] === folderName) {
-        // if (folder['__type'] === 'CalendarFolder:#Exchange') {
+        if (folder['__type'] == 'CalendarFolder:#Exchange' && folderName.includes(folder['DisplayName'])) {
+            reqFolderId = folder.FolderId.Id
+            return
+        }
+        /*if (folder['__type'] === 'CalendarFolder:#Exchange') {
             folderCounter++
             if (folderCounter === 1) {
                 reqFolderId = folder.FolderId.Id
+                return
             }
-        }
+        }*/
     });
 
     return reqFolderId

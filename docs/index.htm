@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
-        <title>Bookmarklet-App</title>
+        <title>Office365™ calendar export Bookmarklet-App</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,13 @@
     <body>
         <div class="header">
             <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-                <a class="pure-menu-heading" href="">iCalendar sync</a>
+                <a class="pure-menu-heading" href="">Office365™ iCalendar sync</a>
+
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="https://wikipedia.org/wiki/ICalendar" class="pure-menu-link">About iCalendar</a></li>
+                    <li class="pure-menu-item"><a href="https://wikipedia.org/wiki/Bookmarklet" class="pure-menu-link">About Bookmarklets</a></li>
+                    <li class="pure-menu-item"><a href="https://github.com/evo42/Office365-Outlook-Teams-iCalendar-sync#readme" class="pure-menu-link">Source Code</a></li>
+                </ul>
             </div>
         </div>
 
@@ -23,15 +29,30 @@
             <div class="splash">
                 <h1 class="splash-head">Office365™ calendar sync</h1>
                 <p class="splash-subhead">
-                    Drag the link to your bookmarks bar.
+                    Drag the following link to your bookmarks bar.
                 </p>
-                <p>
+                <p class="link-large">
                     <a href="javascript: (() => { let%20dt=new%20Date,userPrivateTld=%22gmail.com%22,userEmail=%22%22,companyName=%22%22,companyTld=%22%22,dtstamp=dt.getFullYear()+(dt.getMonth()+1%3C10?%220%22:%22%22)+(dt.getMonth()+1)+(dt.getDate()%3C10?%220%22:%22%22)+dt.getDate()+%22T%22+(dt.getHours()%3C10?%220%22:%22%22)+dt.getHours()+(dt.getMinutes()%3C10?%220%22:%22%22)+dt.getMinutes()+(dt.getSeconds()%3C10?%220%22:%22%22)+dt.getSeconds()+%22Z%22,currentLocation=(dateToday=dt.getFullYear()+(dt.getMonth()+1%3C10?%220%22:%22%22)+%22-%22+(dt.getMonth()+1)+%22-%22+(dt.getDate()%3C10?%220%22:%22%22)+dt.getDate(),dateNextYear=dt.getFullYear()+1+(dt.getMonth()+1%3C10?%220%22:%22%22)+%22-%22+(dt.getMonth()+1)+%22-%22+(dt.getDate()%3C10?%220%22:%22%22)+dt.getDate(),timeNow=(dt.getHours()%3C10?%220%22:%22%22)+dt.getHours()+%22-%22+(dt.getMinutes()%3C10?%220%22:%22%22)+dt.getMinutes()+%22-%22+(dt.getSeconds()%3C10?%220%22:%22%22)+dt.getSeconds(),reqRangeStart=dateToday,reqRangeEnd=dateNextYear,reqCanaryId=null,calTimeZone=%22Europe/Vienna%22,appTld=%22outlook.office.com%22,appTldSuffix=%22/calendar/view/month/%22,document.location.href),appTldPrefix=%22https://%22;currentLocation.includes(appTld)%7C%7C(console.log(%22***%20Robot:%20I%20can%20only%20operate%20on%20the%20TLD%20%22+appTld),window.location.href=appTldPrefix+appTld+appTldSuffix);const%20cookieName=%22X-OWA-CANARY%22,cookieValue=%22;%20%22+document.cookie,cookieParts=cookieValue.split(%60;%20$%7BcookieName%7D=%60);async%20function%20doDataRequest(e)%7Bvar%20t,a,e=await%20fetch(%22https://outlook.office.com/owa/startupdata.ashx?app=Calendar&n=0%22,%7Bmethod:%22POST%22,headers:%7B%22x-owa-canary%22:e,action:%22StartupData%22,%22x-req-source%22:%22Calendar%22%7D%7D);return%20e.ok?(a=(t=await%20e.json()).findFolders.Body.ResponseMessages.Items%5B0%5D.RootFolder.Folders,userEmail=t.owaUserConfig.SessionSettings.UserEmailAddress,companyTld=t.owaUserConfig.SessionSettings.OrganizationDomain,companyName=t.owaUserConfig.SessionSettings.CompanyName,calTimeZone=t.owaUserConfig.UserOptions.MailboxTimeZoneOffset%5B0%5D.IanaTimeZones%5B0%5D,calTimeZoneMS=t.owaUserConfig.UserOptions.TimeZone,t.findFolders&&t.findFolders.Body?a:%7Bsuccess:!1,msg:%22No%20Folder%20found.%22%7D):%22HTTP%20error:%20%22+e.status%7Dasync%20function%20doCalendarRequest(e,t)%7Bvar%20a,t=await%20fetch(%22https://outlook.office.com/owa/service.svc?action=GetCalendarView&app=Calendar&n=0%22,%7Bmethod:%22POST%22,headers:%7B%22x-owa-canary%22:t,action:%22GetCalendarView%22,%22x-req-source%22:%22Calendar%22,%22x-owa-urlpostdata%22:%22%257B%2522__type%2522%253A%2522GetCalendarViewJsonRequest%253A%2523Exchange%2522%252C%2522Header%2522%253A%257B%2522__type%2522%253A%2522JsonRequestHeaders%253A%2523Exchange%2522%252C%2522RequestServerVersion%2522%253A%2522V2018_01_08%2522%252C%2522TimeZoneContext%2522%253A%257B%2522__type%2522%253A%2522TimeZoneContext%253A%2523Exchange%2522%252C%2522TimeZoneDefinition%2522%253A%257B%2522__type%2522%253A%2522TimeZoneDefinitionType%253A%2523Exchange%2522%252C%2522Id%2522%253A%2522%22+encodeURIComponent(calTimeZoneMS)+%22%2522%257D%257D%257D%252C%2522Body%2522%253A%257B%2522__type%2522%253A%2522GetCalendarViewRequest%253A%2523Exchange%2522%252C%2522CalendarId%2522%253A%257B%2522__type%2522%253A%2522TargetFolderId%253A%2523Exchange%2522%252C%2522BaseFolderId%2522%253A%257B%2522__type%2522%253A%2522FolderId%253A%2523Exchange%2522%252C%2522Id%2522%253A%2522%22+encodeURIComponent(e)+%22%2522%257D%257D%252C%2522RangeStart%2522%253A%2522%22+reqRangeStart+%22T00%253A00%253A00.000%2522%252C%2522RangeEnd%2522%253A%2522%22+reqRangeEnd+%22T00%253A00%253A00.000%2522%257D%257D%22%7D%7D);return%20t.ok?(a=(e=await%20t.json()).Body.Items,e.Body&&e.Body.Items?a:%7Bsuccess:!1,msg:%22No%20Events%20found.%22%7D):%22HTTP%20error:%20%22+t.status%7Dfunction%20fmtDate(e)%7Breturn%20e.replace(%22+01:00%22,%22%22).replaceAll(%22-%22,%22%22).replaceAll(%22:%22,%22%22)%7D2===cookieParts.length?reqCanaryId=cookieParts.pop().split(%22;%22).shift():console.log(%22***%20Problem%20detected:%20can%20not%20find%20OWA%20Canary%20Id.%22),doDataRequest(reqCanaryId).then(e=%3E%7Blet%20t=0;return%20e.forEach(e=%3E%7B%22CalendarFolder:#Exchange%22==e.__type&&%22Kalender%22===e.DisplayName&&1===++t&&(reqFolderId=e.FolderId.Id)%7D),reqFolderId%7D).then(function(e)%7BdoCalendarRequest(e,reqCanaryId).then(e=%3E%7Blet%20t,a=%22BEGIN:VCALENDAR%5Cr%5CnVERSION:2.0%5Cr%5Cn%22,o=%22END:VCALENDAR%5Cr%5CnUID:uid+%22+userEmail+%22%5Cr%5CnDTSTAMP:%22+dtstamp+%22%5Cr%5CnPRODID:calendar+%22+userEmail+%22%5Cr%5Cn%22;var%20n,r,d;e&&%22object%22==typeof%20e?(e.forEach(e=%3E%7Ba=(a=(a=(a=(a+=%22BEGIN:VEVENT%5Cr%5CnTRANSP:TRANSPARENT%5Cr%5CnLOCATION:Meeting%5Cr%5CnCLASS:PUBLIC%5Cr%5CnDTSTAMP:%22+dtstamp)+%22%5Cr%5CnSUMMARY:%22+e.Subject)+%22%5Cr%5CnDESCRIPTION:%20@%22+e.Organizer.Mailbox.Name)+%22%5Cr%5CnDTSTART;TZID=Europe/Vienna:%22+fmtDate(e.Start)+%22%5Cr%5CnDTEND;TZID=Europe/Vienna:%22+fmtDate(e.End))+%22%5Cr%5CnDTSTAMP:%22+dtstamp+%22%5Cr%5CnUID:%22+e.ItemId.Id+%22%5Cr%5CnEND:VEVENT%5Cr%5Cn%22%7D),t=a+o,d=new%20Blob(%5Bt%5D,%7Btype:%22text/calendar%22%7D),n=document.createElement(%22a%22),r=new%20MouseEvent(%22click%22,%7Bview:window,bubbles:!0,cancelable:!1%7D),n.download=%22company-cal-events.%22+companyTld+%22--%22+dtstamp+%22.ics%22,n.href=window.URL.createObjectURL(d),n.dataset.downloadurl=%5B%22text/calendar%22,n.download,n.href%5D.join(%22:%22),n.dispatchEvent(r),%22%22!=userPrivateTld&&(d=%22https://outlook.office.com/mail/deeplink/compose%22,d=(d+=%22?to=%22+userEmail.replace(companyTld,userPrivateTld))+%22&subject=iCal+Sync&body=iCal+%22+companyName+%22%20-%20%22+dtstamp,window.location.href=d)):console.log(e)%7D)%7D); })();">
                         iCal sync
                     </a>
                 </p>
                 <p class="splash-subhead">
-                    Then click on it to sync your calendar - requires you to be on the page: outlook.office.com
+                    Click on it to export your calendar items as iCalendar document.
+                </p>
+                <p class="splash-subhead">
+                    If you are not on the <em>outlook.office.com</em> page you will be redirected there.<br />
+                    The bookmarklet will generate an *.ics file and starts a download of it.
+                </p>
+                <p class="splash-subhead">
+                    You will be redirected to Outlook™ where you can send the file to yourself.<br />
+                    <em>{username}@{corporate.tld}</em> will be replaced with <em>{username}@gmail.com</em><br />
+                    Note: currently there's a bug which prevents attachment uploads via drag&amp;drop.<br />
+                </p>
+                <p class="splash-subhead">
+                    Subsequent exports will update existing calendar entries in your private calendar.
+                </p>
+                <p class="splash-subhead">
+                    <em>It works for me&reg;</em> &mdash; <a href="https://github.com/evo42/Office365-Outlook-Teams-iCalendar-sync/issues">create a new issue</a> if you have change requests / questions.
                 </p>
             </div>
         </div>

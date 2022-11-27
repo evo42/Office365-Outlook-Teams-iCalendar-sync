@@ -1,6 +1,5 @@
-.hintrc
-.gitignore
 package-lock.json
+.DS_Store
 xyz.dist__*
 dist
 node_modules
