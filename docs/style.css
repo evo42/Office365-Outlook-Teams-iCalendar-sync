@@ -50,8 +50,6 @@ label {
     text-align: center;
 }
 
-
-
 /*
  * -- PURE FORM STYLES --
  * Style the form inputs and labels
@@ -88,12 +86,10 @@ a.pure-button-primary {
     font-size: 120%;
 }
 
-
 /*
  * -- MENU STYLES --
  * I want to customize how my .pure-menu looks at the top of the page
  */
-
 .home-menu {
     padding: 0.5em;
     text-align: center;
@@ -130,13 +126,11 @@ a.pure-button-primary {
     color: #AECFE5;
 }
 
-
 /*
  * -- SPLASH STYLES --
  * This is the blue top section that appears on the page.
  */
-
-.splash-container {
+ .splash-container {
     background: #1f8dd6;
     z-index: 1;
     overflow: hidden;
@@ -156,7 +150,6 @@ a.pure-button-primary {
     position: absolute;
     top: 100px; left: 0; bottom: 0; right: 0;
     text-align: center;
-    /* text-transform: uppercase; */
 }
 
 /* This is the main heading that appears on the blue section */
@@ -167,7 +160,7 @@ a.pure-button-primary {
     border: 3px solid white;
     padding: 1em 1.6em;
     font-weight: 100;
-    border-radius: 5px;
+    border-radius: 15px;
     line-height: 1em;
 }
 
@@ -191,7 +184,6 @@ a.pure-button-primary {
     min-height: 12%;
     z-index: 2;
     background: white;
-
 }
 
 /* We want to give the content area some more padding */
@@ -240,7 +232,6 @@ a.pure-button-primary {
  * of the mobile styles.
  */
 @media (min-width: 48em) {
-
     /* We increase the body font size */
     body {
         font-size: 16px;
@@ -255,11 +246,6 @@ a.pure-button-primary {
             float: right;
         }
 
-    /* We increase the height of the splash-container */
-/*    .splash-container {
-        height: 500px;
-    }*/
-
     /* We decrease the width of the .splash, since we have more width
     to work with */
     .splash {
@@ -270,7 +256,6 @@ a.pure-button-primary {
     .splash-head {
         font-size: 250%;
     }
-
 
     /* We remove the border-separator assigned to .l-box-lrg */
     .l-box-lrg {

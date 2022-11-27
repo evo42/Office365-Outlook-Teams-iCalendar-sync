@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
             integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
 
-        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
@@ -27,7 +27,7 @@
 
         <div class="splash-container">
             <div class="splash">
-                <h1 class="splash-head">Office365™ calendar sync</h1>
+                <h1 class="splash-head">Office365™ calendar&nbsp;sync</h1>
                 <p class="splash-subhead">
                     Drag the following link to your bookmarks bar.
                 </p>
@@ -40,19 +40,42 @@
                     Click on it to export your calendar items as iCalendar document.
                 </p>
                 <p class="splash-subhead">
-                    If you are not on the <em>outlook.office.com</em> page you will be redirected there.<br />
-                    The bookmarklet will generate an *.ics file and starts a download of it.
+                    It will generate an <em>*.ics</em> file and starts a download of it.
                 </p>
-                <p class="splash-subhead">
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="content is-center">
+                <p>
+                    <h3 class="content-subhead">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        outlook.office.com
+                    </h3>
+                    If you are not on the <em>outlook.office.com</em> page you will be redirected there.<br />
+                    You need to click the bookmarklet once again to run the calendar export.<br />
+                </p>
+                <p>
+                    <h3 class="content-subhead">
+                        <i class="fa-solid fa-envelopes-bulk"></i>
+                        Send calendar
+                    </h3>
                     You will be redirected to Outlook™ where you can send the file to yourself.<br />
-                    <em>{username}@{corporate.tld}</em> will be replaced with <em>{username}@gmail.com</em><br />
+                    To: <em>{username}@{corporate.tld}</em> will be replaced with <em>{username}@gmail.com</em><br />
                     Note: currently there's a bug which prevents attachment uploads via drag&amp;drop.<br />
                 </p>
-                <p class="splash-subhead">
-                    Subsequent exports will update existing calendar entries in your private calendar.
+                <p>
+                    <h3 class="content-subhead">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        Sync calendar
+                    </h3>
+                    Subsequent exports / imports will update existing calendar entries in your private calendar.
                 </p>
-                <p class="splash-subhead">
-                    <em>It works for me&reg;</em> &mdash; <a href="https://github.com/evo42/Office365-Outlook-Teams-iCalendar-sync/issues">create a new issue</a> if you have change requests / questions.
+                <p>
+                    <h3 class="content-subhead">
+                        <i class="fa-solid fa-comment-dots"></i>
+                        Improvements
+                    </h3>
+                    <em>It works for me&reg;</em> &mdash; if you have change requests / questions <a href="https://github.com/evo42/Office365-Outlook-Teams-iCalendar-sync/issues">create a new issue</a>.
                 </p>
             </div>
         </div>
